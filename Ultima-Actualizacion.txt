@@ -1,0 +1,95 @@
+﻿*CARGA DE APLICACION*
+
+Cuando se inicia la app, se reproduce el video "intro_juego" en la carpeta REF1 a modo de inicio de la app y para que todo dentro del juego cargue bien
+
+*VARIADO*
+
+1) Botones Sonido, Siguiente, Atras: crear efecto al presionar botones de siguiente y retroceder cancion (efecto de achicarse hasta que se suelte o algo 
+por el estilo). 
+
+2) En el boton de jugar y de wallpaper las imagenes son remplazadas por las imagenes que se encuentran en la carpeta Ref 1 las cuales se 
+llaman "base_jugar.png" para el boton de jugar y "base_wallpaper.png" para el boton de wallpaper. Estas dos imagenes tienen que ser faciles de reemplazar 
+ya que son las imagenes que se cambiaran por cada app nueva que se vaya realizando. 
+
+3) Al darle click al boton de "QUIERO" te llevara a un video en youtube (de momento el video no esta disponible pero estaria bueno dejar un espacio
+para que luego yo rellenara con con el link del video en cuestion)
+
+4) Al presionar el boton de Jugar el sonido no esta empezando al mismo momento que la barra de carga, la barra carga hasta la mitad y recien ahi empieza el
+sonido de carga (si el sonido es muy corto y por eso no se logran sincronizar, pidanme otro sonido)
+
+5) En la parte de wallpaper el boton "Slider.avi" se sustituye por el boton "slider.gif" de la carpeta Ref 4 (la idea es que el boton de "descarga", el de "poner como wallpaper" y el de "slider" tengan el mismo tamaño de altura. El boton anterior estaba muy chico. Cambiarlo por este nuevo y ponerlo en una medida correcta)
+
+6) Cuando se aprieta el boton jugar y se entra al juego, hasta que entra el cohete no se va la musica del inicio. Lo que tiene que pasar es que apenas empiece a cargar el boton de "carga"
+y aparece la explosion, se debe parar la musica del inicio.
+
+*INICIO*
+
+1) Cuando una persona juega por primera vez, o bien ya jugo pero no llego a pasar el nivel 1, al dar click al boton jugar, directamente aparece
+la animacion del cohete tal y como ya pasa. Pero cuando ya paso el nivel 1 hay que darle una opcion de que eliga el nivel para jugar 
+(tener en cuenta que si llego a modo de ejemplo al nivel 3, cuando vuelva a entrar al juego tiene que quedarse guardado el progreso del jugador)
+Entonces cuando ya haya pasado el nivel 1 y vuelva a entrar a la app le saldra el pop up de niveles. Al darle click a jugar ya no saldra
+el boton de carga, no habra que dejar presionado 2 segundos, se le dara un click y saldra la animacion  "efecto_ventana". Luego de la animacion
+aparecen subiendo de opacidad los botones nivel 1,2,3,4,5. Todo esto se encuentra en la carpeta Ref 1, los botones de nivel 2,3,4,5 hay dos 
+variedades 1 para cuando esta bloqueado el nivel y otro para cuando ya se desbloqueo. El nivel 3 tiene una corona cuando esta bloqueado
+en vez de un candado, porque cuando pasan el nivel 3 se habilitan los wallppaper.
+
+2) Los wallpaper tienen que estar bloqueados hasta que se consiga pasar el nivel 3. Por lo tanto, hasta ese entonces, en la pantalla de inicio sección Wallpapers se debe utilizar la imagen "block.png" de la carpeta Ref 1. Luego de pasar el nivel ahí si se utliza la imagen "base_wallpaper.png".	
+
+
+*JUEGO*
+
+1) Se cambian los botones de respuesta, incorrecto, correcto y escritura. En la carpeta "Ref 2" se encuentra el boton "correcto.png", "incorrecto.png", "respuestas.png" (son del mismo tamaño los tres) y "escritura.png". Tomar como referencia la imagen "Imagen referencia juego.jpg" que se encuentra en la carpeta "Screen Ref". De esta imagen de referencia, ver la distancia que debe tener cada boton entre si, y la imagen "escritura" con su tamaño como se indica en mencionada imagen de referencia.
+
+2) Los numeros que van descontando en la barra superior tienen que ser con la fuente "Poppins Bold"
+
+3) Cuando se responde bien o mal una pregunta en la carpeta "Ref 2" se encuentran los sonidos "correct.mp3" e "incorrect.mp3". Deben de ir con los botones
+de correcto e incorrecto. Los sonidos deben de ir a un 50% de volumen. 
+
+4) Los botones de respuesta y la imagen de escritura deben entrar mas rapido (esta muy lento el juego mientras aparecen y desaparecen y vuelven a entrar 
+pasa mucho tiempo). Cuando las respuestas y la imagen de escritura se van deben irse mas rapido y la transicion tiene que ser más fluida.
+Queda un efecto como trancado cuando se va, tiene que simplemente irse hacia la derecha.
+
+5) No se debe de poder darle click a los botones hasta que no aparezca la imagen de escritura con la pregunta en cuestion
+
+6) Cuando se responden las preguntas bien o mal y aparece el cartel de GANASTE O PERDISTE deben reproducirse de forma infinita y los 
+botones de abajo de "desafiar a un amigo" o "siguiente nivel" o "de nuevo" deben ser mas grandes y al darle clicks a estos botones 
+deben tener una animacion, puede ser de perder saturacion o achicarse o algo por el estilo pero siempre los botones deben de tener una animacion.
+
+7) Si apagué el botón de música durante la pantalla de inicio, se debe mantener la música apagada durante todo el juego hasta que yo la vuelva a encender. Ahora está pasando que si estoy jugando en alguna pregunta y vuelvo para atrás al inicio, la música se enciende.
+
+*PUBLICIDAD*
+
+1) Antes de entrar al juego se pone PUBLICIDAD DE CARGA DE INICIO DE JUEGO ( para que el juego cargue bien, ademas es una opcion que brinda admob )
+
+2) En el inicio NO tiene que tener banner, el banner solo se usa en: Slider vertical, wallpaper y entre cada nivel que te da la opcion de pasar al siguiente 
+nivel en caso de que hayas acertado todas las preguntas o volver a intentar.
+
+3) Cuando se entra en jugar aparece PUBLICIDAD INTERSTICIAL
+
+4) Al empezar a jugar no hay publicidad de banner ya que abajo estan los botones de ayuda. Al darle click a uno de esos botones aparece un PopUp de aviso de reproduccion de Publicidad a cambio de recompensa (jugar las respuestas equivocadas y no todas) y luego del aviso aparece PUBLICIDAD BONIFICADA
+
+5) Entre cada pregunta NO hay publicidad. Pero cuando pasan del nivel 1 al 2 si hay publicidad y es PUBLICIDAD INTERSTICIAL (AL MENOS QUE NO HAYAN RESPONDIDO TODAS BIEN ENTONCES AHI TE DA LA OPCION DE VOLVER A RESPONDER LAS PREGUNTAS QUE RESPONDISTE MAL Y AHI TE APARECE UN BONIFICADO ) y asi entre cada nivel PERO NO entre cada pregunta.
+
+6) Al ir al slider vertical aparece PUBLICIDAD INTERSTICIAL y en la pantalla de slider vertical sí aparece PUBLICIDAD DE BANNER. Al dar click los lleva a la play store o appstore o huawei.
+
+7) Al ir a la pantalla de wallpapers aparece una PUBLICIDAD DE BANNER abajo. Para descargar una foto tienen que ver una PUBLICIDAD BONIFICADA y ahi se le descargaria la imagen o podria ponerla de fondo de pantalla.
+
+8) En la sección "Artista Aleatorio" además de la foto de perfil tiene que aparecer el nombre de la personalidad en texto abajo de la foto. Ajustar tamaños para que quede visualmente correcto.
+
+
+*BUGS*
+
+BUGS) 1) Cuando se presiona el boton de jugar y se desliza un poco para abajo el boton de jugar carga solo como si se le estuviera presionando 
+pero en realidad no. EXPLICACION: Se presiona el boton y se desliza el dedo hacia abajo (si se hace lento no sucede) pero si se desliza rapido hacia abajo
+mientras se presiona el boton carga solo. La idea es que siempre que se suelte deje de cargar.
+
+Bug 2) Al entrar a jugar a las preguntas y volver hacia atras a la pantalla inicial, la musica como si si estuviese jugando sigue reproduciendo y se
+empieza a mezclar la la musica del juego con la voz de presentacion de "hola soy andy"
+
+Bug 3) Boton de apagar musica se bugea y desaparece o queda apagado cuando la musica se reproduce. Fijarse.
+
+*DUDAS* 
+
+1) En dispositivos android con desplazar el dedo en uno de los costados vuelve hacia atras en las pantallas, pero en dispositivos iphone como funciona
+esto?
+
